@@ -1,0 +1,152 @@
+{
+    "ingredients": {
+        "flour": {"roles": ["dry"], "unit": "g", "vegan": true}, 
+        "baking powder": {"roles": ["dry"], "unit": "tsp", "vegan": true}, 
+        "baking soda": {"roles": ["dry"], "unit": "tsp", "vegan": true}, 
+        "salt": {"roles": ["dry"], "unit": "tsp", "vegan": true}, 
+        "white sugar": {"roles": ["sweetener", "topping"], "unit": "g", "vegan": true}, 
+        "brown sugar": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "dark brown sugar": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "light brown sugar": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "molasses": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "butter": {"roles": ["fat"], "unit": "g", "vegan": false}, 
+        "margarine": {"roles": ["fat"], "unit": "g", "vegan": true}, 
+        "shortening": {"roles": ["fat"], "unit": "g", "vegan": false}, 
+        "oil": {"roles": ["fat"], "unit": "ml", "vegan": true}, 
+        "eggs": {"roles": ["liquid"], "unit": "g", "vegan": false}, 
+        "milk": {"roles": ["liquid"], "unit": "ml", "vegan": false}, 
+        "vanilla extract": {"roles": ["liquid"], "unit": "tsp", "vegan": true}, 
+        "dark chocolate chips": {"roles": ["add-in"], "unit": "g", "vegan": false}, 
+        "oats": {"roles": ["dry", "add-in"], "unit": "g", "vegan": true}, 
+        "raisins": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "cocoa powder": {"roles": ["dry", "add-in"], "unit": "g", "vegan": false}, 
+        "chopped walnuts": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "chopped peanuts": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "chopped hazelnuts": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "cinnamon": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "clove": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "nutmeg": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "ginger": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "allspice": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "cayenne pepper": {"roles": ["spice"], "unit": "tsp", "vegan": true}, 
+        "caramel sauce": {"roles": ["sweetener", "add-in", "topping"], "unit": "g", "vegan": false}, 
+        "peanut butter": {"roles": ["fat", "liquid", "add-in"], "unit": "g", "vegan": true}, 
+        "chocolate syrup": {"roles": ["topping"], "unit": "g", "vegan": false}, 
+        "milk chocolate chips": {"roles": ["add-in"], "unit": "g", "vegan": false},
+        "chocolate chunks": {"roles": ["add-in"], "unit": "g", "vegan": false}, 
+        "chocolate sprinkles": {"roles": ["add-in", "topping"], "unit": "g", "vegan": false}, 
+        "chocolate frosting": {"roles": ["topping"], "unit": "g", "vegan": false}, 
+        "chocolate ganache": {"roles": ["topping"], "unit": "g", "vegan": false},
+        "chocolate glaze": {"roles": ["topping"], "unit": "g", "vegan": false}, 
+        "chocolate icing": {"roles": ["topping"], "unit": "g", "vegan": false}, 
+        "nutella": {"roles": ["add-in", "topping", "liquid"], "unit": "g", "vegan": false}, 
+        "coconut flakes": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "coconut milk": {"roles": ["liquid"], "unit": "ml", "vegan": true}, 
+        "coconut oil": {"roles": ["fat"], "unit": "g", "vegan": true}, 
+        "coconut flour": {"roles": ["dry"], "unit": "g", "vegan": true}, 
+        "mini marshmallows": {"roles": ["add-in", "topping"], "unit": "g", "vegan": false}, 
+        "crushed graham crackers": {"roles": ["add-in"], "unit": "g", "vegan": false}, 
+        "caramel candy": {"roles": ["add-in"], "unit": "g", "vegan": false}, 
+        "flaky sea salt": {"roles": ["topping"], "unit": "tsp", "vegan": true}, 
+        "sugar sprinkles": {"roles": ["add-in", "topping"], "unit": "g", "vegan": true}, 
+        "honey": {"roles": ["sweetener", "topping"], "unit": "g", "vegan": false}, 
+        "puffed rice cereal": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "caramelised honey": {"roles": ["sweetener"], "unit": "g", "vegan": false}, 
+        "tahini": {"roles": ["liquid"], "unit": "g", "vegan": true}, 
+        "egg yolk": {"roles": ["liquid"], "unit": "g", "vegan": false}, 
+        "sesame seeds": {"roles": ["add-in", "topping"], "unit": "g", "vegan": true}, 
+        "toasted pumpkin seeds": {"roles": ["add-in", "topping"], "unit": "g", "vegan": true}, 
+        "dried apricots": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "cream cheese": {"roles": ["liquid"], "unit": "g", "vegan": false}, 
+        "icing sugar": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "grated carrot": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "orange juice": {"roles": ["liquid"], "unit": "g", "vegan": true}, 
+        "orange zest": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "roasted peanuts": {"roles": ["add-in"], "unit": "g", "vegan": true}, 
+        "chia egg": {"roles": ["liquid"], "unit": "g", "vegan": true}, 
+        "aquafaba icing": {"roles": ["topping"], "unit": "g", "vegan": true}, 
+        "maple syrup": {"roles": ["sweetener"], "unit": "g", "vegan": true}, 
+        "white chocolate chips": {"roles": ["add-in", "topping"], "unit": "g", "vegan": false}
+    }, 
+    "rules": {
+        "amounts": {
+            "dry": {"min": 50, "max": 400}, 
+            "liquid": {"min": 10, "max": 250}, 
+            "fat": {"min": 50, "max": 250}, 
+            "sweetener": {"min": 50, "max": 250}, 
+            "spice": {"min": 1, "max": 3}, 
+            "add-in": {"min": 50, "max": 200}, 
+            "topping": {"min": 50, "max": 200}
+        }, 
+        "special cases": {
+            "salt": {"min": 1, "max": 3}, 
+            "baking powder": {"min": 1, "max": 3}, 
+            "baking soda": {"min": 1, "max": 3},
+            "vanilla extract": {"min": 1, "max": 3},
+            "flaky sea salt": {"min": 1, "max": 2}
+        }, 
+        "vegan alternatives": {
+            "dry": ["flour", "baking powder", "baking soda", "salt", "oats", "coconut flour"], 
+            "sweetener": ["white sugar", "brown sugar", "dark brown sugar", "light brown sugar", "molasses", "icing sugar", "maple syrup"], 
+            "topping": ["white sugar", "flaky sea salt", "sugar sprinkles", "sesame seeds", "toasted pumpkin seeds", "aquafaba icing"], 
+            "fat": ["margarine", "oil", "peanut butter", "coconut oil"], 
+            "liquid": ["vanilla extract", "peanut butter", "coconut milk", "tahini", "orange juice", "chia egg"], 
+            "add-in": ["oats", "raisins", "chopped walnuts", "chopped peanuts", "chopped hazelnuts", "peanut butter", "coconut flakes", "sugar sprinkles", "puffed rice cereal", "sesame seeds", "toasted pumpkin seeds", "dried apricots", "grated carrot", "orange zest", "roasted peanuts"], 
+            "spice": ["cinnamon", "clove", "nutmeg", "ginger", "allspice", "cayenne pepper"]
+        }
+    }, 
+    "recipes": [
+        {
+            "name": "chocolate cookies", 
+            "ingredients": [{"name": "butter", "amount": 115, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "brown sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 125, "unit": "g", "role": "dry"}, {"name": "cocoa powder", "amount": 55, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "salt", "amount": 0.125, "unit": "tsp", "role": "dry"}, {"name": "milk", "amount": 15, "unit": "ml", "role": "liquid"}, {"name": "white chocolate chips", "amount": 225, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "cookies", 
+            "ingredients": [{"name": "butter", "amount": 225, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 170, "unit": "g", "role": "sweetener"}, {"name": "dark brown sugar", "amount": 213, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 100, "unit": "g", "role": "liquid"}, {"name": "vanilla extract", "amount": 2, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 355, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "salt", "amount": 1, "unit": "tsp", "role": "dry"}]
+        }, {
+            "name": "sugar cookies", 
+            "ingredients": [{"name": "flour", "amount": 344, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "baking powder", "amount": 0.5, "unit": "tsp", "role": "dry"}, {"name": "butter", "amount": 227, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 300, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}]
+        }, {
+            "name": "oatmeal cookies", 
+            "ingredients": [{"name": "flour", "amount": 250, "unit": "g", "role": "dry"}, {"name": "cinnamon", "amount": 1.5, "unit": "tsp", "role": "spice"}, {"name": "baking soda", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "salt", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "butter", "amount": 227, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 200, "unit": "g", "role": "sweetener"}, {"name": "brown sugar", "amount": 195, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 100, "unit": "g", "role": "liquid"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}, {"name": "oats", "amount": 300, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "shortbread cookies", 
+            "ingredients": [{"name": "flour", "amount": 500, "unit": "g", "role": "dry"}, {"name": "butter", "amount": 450, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "vanilla extract", "amount": 2, "unit": "tsp", "role": "liquid"}]
+        }, {
+            "name": "gingerbread cookies", 
+            "ingredients": [{"name": "butter", "amount": 120, "unit": "g", "role": "fat"}, {"name": "molasses", "amount": 25, "unit": "g", "role": "sweetener"}, {"name": "brown sugar", "amount": 170, "unit": "g", "role": "sweetener"}, {"name": "salt", "amount": 0.5, "unit": "tsp", "role": "dry"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "flour", "amount": 200, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 0.5, "unit": "tsp", "role": "dry"}, {"name": "clove", "amount": 0.5, "unit": "tsp", "role": "spice"}, {"name": "ginger", "amount": 1.5, "unit": "tsp", "role": "spice"}, {"name": "cinnamon", "amount": 0.5, "unit": "tsp", "role": "spice"}, {"name": "white sugar", "amount": 60, "unit": "g", "role": "topping"}]
+        }, {
+            "name": "rice crispy cookies", 
+            "ingredients": [{"name": "butter", "amount": 100, "unit": "g", "role": "fat"}, {"name": "brown sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "honey", "amount": 40, "unit": "g", "role": "sweetener"}, {"name": "flour", "amount": 175, "unit": "g", "role": "dry"}, {"name": "puffed rice cereal", "amount": 25, "unit": "g", "role": "add-in"}, {"name": "dark chocolate chips", "amount": 25, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "caramelised honey and tahini cookies", 
+            "ingredients": [{"name": "caramelised honey", "amount": 150, "unit": "g", "role": "sweetener"}, {"name": "butter", "amount": 150, "unit": "g", "role": "fat"}, {"name": "dark brown sugar", "amount": 75, "unit": "g", "role": "sweetener"}, {"name": "white sugar", "amount": 75, "unit": "g", "role": "sweetener"}, {"name": "tahini", "amount": 100, "unit": "g", "role": "liquid"}, {"name": "egg", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "egg yolk", "amount": 25, "unit": "g", "role": "liquid"}, {"name": "flour", "amount": 250, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 0.75, "unit": "tsp", "role": "dry"}, {"name": "flaky sea salt", "amount": 1, "unit": "tsp", "role": "topping"}, {"name": "sesame seeds", "amount": 10, "unit": "g", "role": "topping"}]
+        }, {
+            "name": "coconut and raisin oat cookies", 
+            "ingredients": [{"name": "oats", "amount": 125, "unit": "g", "role": "dry"}, {"name": "butter", "amount": 150, "unit": "g", "role": "fat"}, {"name": "light brown sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "egg", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "honey", "amount": 10, "unit": "g", "role": "sweetener"}, {"name": "vanilla extract", "amount": 0.5, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 100, "unit": "g", "role": "dry"}, {"name": "raisins", "amount": 100, "unit": "g", "role": "add-in"}, {"name": "dried apricots", "amount": 75, "unit": "g", "role": "add-in"}, {"name": "coconut flakes", "amount": 50, "unit": "g", "role": "add-in"}, {"name": "cinnamon", "amount": 0.5, "unit": "tsp", "role": "topping"}]
+        }, {
+            "name": "no-egg cookies", 
+            "ingredients": [{"name": "butter", "amount": 125, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 125, "unit": "g", "role": "sweetener"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 200, "unit": "g", "role": "dry"}, {"name": "baking powder", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "white chocolate chips", "amount": 50, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "coconut flour cookies", 
+            "ingredients": [{"name": "coconut flour", "amount": 75, "unit": "g", "role": "dry"}, {"name": "coconut oil", "amount": 60, "unit": "g", "role": "fat"}, {"name": "eggs", "amount": 100, "unit": "g", "role": "liquid"}, {"name": "peanut butter", "amount": 35, "unit": "g", "role": "fat"}, {"name": "light brown sugar", "amount": 60, "unit": "g", "role": "sweetener"}, {"name": "baking powder", "amount": 0.25, "unit": "tsp", "role": "dry"}, {"name": "dark chocolate chips", "amount": 30, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "pumpkin seed cookies", 
+            "ingredients": [{"name": "butter", "amount": 120, "unit": "g", "role": "fat"}, {"name": "dark brown sugar", "amount": 75, "unit": "g", "role": "sweetener"}, {"name": "light brown sugar", "amount": 75, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 130, "unit": "g", "role": "dry"}, {"name": "cocoa powder", "amount": 25, "unit": "g", "role": "dry"}, {"name": "baking soda", "amount": 0.5, "unit": "tsp", "role": "fat"}, {"name": "toasted pumpkin seeds", "amount": 50, "unit": "g", "role": "add-in"}, {"name": "dark chocolate chips", "amount": 150, "unit": "g", "role": "add-in"}, {"name": "flaky sea salt", "amount": 2, "unit": "tsp", "role": "topping"}]
+        }, {
+            "name": "carrot cake cookies", 
+            "ingredients": [{"name": "cream cheese", "amount": 140, "unit": "g", "role": "liquid"}, {"name": "icing sugar", "amount": 140, "unit": "g", "role": "sweetener"}, {"name": "vanilla extract", "amount": 0.5, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 350, "unit": "g", "role": "dry"}, {"name": "baking powder", "amount": 0.5, "unit": "tsp", "role": "dry"}, {"name": "cinnamon", "amount": 0.5, "unit": "tsp", "role": "spice"}, {"name": "allspice", "amount": 0.5, "unit": "tsp", "role": "spice"}, {"name": "butter", "amount": 140, "unit": "g", "role": "fat"}, {"name": "light brown sugar", "amount": 140, "unit": "g", "role": "sweetener"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "grated carrot", "amount": 200, "unit": "g", "role": "add-in"}, {"name": "orange juice", "amount": 75, "unit": "g", "role": "liquid"}, {"name": "orange zest", "amount": 20, "unit": "g", "role": "add-in"}, {"name": "chopped walnuts", "amount": 25, "unit": "tsp", "role": "topping"}]
+        }, {
+            "name": "apple pie cookies", 
+            "ingredients": [{"name": "flour", "amount": 175, "unit": "g", "role": "dry"}, {"name": "allspice", "amount": 1, "unit": "tsp", "role": "spice"}, {"name": "cinnamon", "amount": 1, "unit": "tsp", "role": "spice"}, {"name": "baking soda", "amount": 0.5, "unit": "tsp", "role": "dry"}, {"name": "light brown sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "oats", "amount": 50, "unit": "g", "role": "dry"}, {"name": "raisins", "amount": 85, "unit": "g", "role": "add-in"}, {"name": "butter biscuits", "amount": 50, "unit": "g", "role": "add-in"}, {"name": "grated apple", "amount": 150, "unit": "g", "role": "add-in"}, {"name": "eggs", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "butter", "amount": 50, "unit": "g", "role": "fat"}, {"name": "honey", "amount": 40, "unit": "g", "role": "sweetener"}]
+        }, {
+            "name": "vegan peanut butter cookies", 
+            "ingredients": [{"name": "margarine", "amount": 100, "unit": "g", "role": "fat"}, {"name": "white sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "vanilla extract", "amount": 2, "unit": "tsp", "role": "liquid"}, {"name": "peanut butter", "amount": 100, "unit": "g", "role": "liquid"}, {"name": "flour", "amount": 225, "unit": "g", "role": "dry"}, {"name": "toasted peanuts", "amount": 30, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "vegan chocolate chip cookies", 
+            "ingredients": [{"name": "coconut oil", "amount": 125, "unit": "g", "role": "fat"}, {"name": "light brown sugar", "amount": 100, "unit": "g", "role": "sweetener"}, {"name": "dark brown sugar", "amount": 150, "unit": "g", "role": "sweetener"}, {"name": "coconut milk", "amount": 125, "unit": "ml", "role": "liquid"}, {"name": "vanilla extract", "amount": 1, "unit": "tsp", "role": "liquid"}, {"name": "flour", "amount": 275, "unit": "g", "role": "dry"}, {"name": "baking powder", "amount": 1, "unit": "tsp", "role": "dry"}, {"name": "baking soda", "amount": 0.25, "unit": "tsp", "role": "dry"}, {"name": "dark chocolate chips", "amount": 200, "unit": "g", "role": "add-in"}]
+        }, {
+            "name": "vegan gingerbread cookies", 
+            "ingredients": [{"name": "chia egg", "amount": 50, "unit": "g", "role": "liquid"}, {"name": "flour", "amount": 400, "unit": "g", "role": "dry"}, {"name": "coconut oil", "amount": 200, "unit": "g", "role": "fat"}, {"name": "ginger", "amount": 6, "unit": "tsp", "role": "spice"}, {"name": "cinnamon", "amount": 1, "unit": "tsp", "role": "spice"}, {"name": "dark brown sugar", "amount": 200, "unit": "g", "role": "sweetener"}, {"name": "maple syrup", "amount": 50, "unit": "g", "role": "sweetener"}, {"name": "aquafaba icing", "amount": 200, "unit": "g", "role": "topping"}]
+        }
+    ]
+}
