@@ -283,7 +283,7 @@ def create_population():
   max_fitnesses = []
   min_fitnesses = []
   avg_fitnesses = []
-  for i in range(1000):
+  for i in range(200):
     R = generate_recipes(20, population)
     population = select_population(population, R)
     max_fitnesses.append(population[0]['fitness'])
