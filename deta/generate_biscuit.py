@@ -3,6 +3,9 @@ import random
 import math
 import itertools
 
+GENERATIONS = 350
+POP_SIZE = 20
+
 def normalise_recipe(recipe):
   norm_recipe = {"name": recipe["name"]}
   unique_ingredients = {}
@@ -275,7 +278,7 @@ def select_population(P, R):
   return newP
 
 def create_population():
-  population = random.choices(recipes, k=20)
+  population = random.choices(recipes, k=POP_SIZE)
 
   evaluate_recipes(population)
   population = sorted(population, reverse = True, key = lambda r: r['fitness'])
@@ -283,8 +286,8 @@ def create_population():
   max_fitnesses = []
   min_fitnesses = []
   avg_fitnesses = []
-  for i in range(200):
-    R = generate_recipes(20, population)
+  for _ in range(GENERATIONS):
+    R = generate_recipes(POP_SIZE, population)
     population = select_population(population, R)
     max_fitnesses.append(population[0]['fitness'])
     min_fitnesses.append(population[-1]['fitness'])

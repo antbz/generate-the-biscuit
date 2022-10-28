@@ -76,7 +76,7 @@
             "sweetener": {"min": 50, "max": 250}, 
             "spice": {"min": 1, "max": 3}, 
             "add-in": {"min": 50, "max": 200}, 
-            "topping": {"min": 50, "max": 200}
+            "topping": {"min": 10, "max": 50}
         }, 
         "special cases": {
             "salt": {"min": 1, "max": 3}, 
