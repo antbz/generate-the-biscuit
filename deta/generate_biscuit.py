@@ -3,7 +3,7 @@ import random
 import math
 import itertools
 
-GENERATIONS = 350
+GENERATIONS = 400
 POP_SIZE = 20
 
 def normalise_recipe(recipe):
@@ -286,7 +286,7 @@ def create_population():
   max_fitnesses = []
   min_fitnesses = []
   avg_fitnesses = []
-  for _ in range(GENERATIONS):
+  for i in range(GENERATIONS):
     R = generate_recipes(POP_SIZE, population)
     population = select_population(population, R)
     max_fitnesses.append(population[0]['fitness'])
