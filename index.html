@@ -70,7 +70,7 @@
 
                         <div id="logo">
                             <a href="index.html" class="standard-logo"><img src="assets/logo.png" alt="Canvas Logo"></a>
-                            
+
                         </div>
                         <div class="header-misc">
 
@@ -366,14 +366,26 @@
                 <div class="col-lg-4 dark">
                     <div class="position-sticky min-vh-60 min-vh-md-100 d-flex flex-column align-items-center center justify-content-center"
                         style="top:0; background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url('assets/side-bg.jpg') center center / cover;">
-                        <h2 class="display-4 px-3 center fw-bold d-block">Generate<br>Recipes</h2>
+                        <h2 class="display-4 px-3 center fw-bold d-block">Generate<br>Cookies</h2>
                         <button class="button button-large button-light button-white button-circle m-0 px-5"
-                            id="button">Generate!</a>
+                            id="button">
+                            <span id="text">Generate!</span>
+                            <div class="spinner-border" role="status" id="loader">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </button>
                     </div>
                 </div>
 
 
+
                 <div class="col-lg-8">
+                    <div style="display: flex; flex-direction: column; align-items: center; padding: 60px 0;"
+                        id="cookies">
+                        <i class="icon-cookie-bite" style="font-size: 160px;">
+                        </i>
+                        <span style="font-size: 40px;">No cookies yet... </br> Generate some!</span>
+                    </div>
                     <div class="row g-0" id="recipes">
                     </div>
                 </div>
@@ -491,21 +503,32 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $("#loader").hide();
+        });
         $("#button").click(function (e) {
+            $("#loader").show();
+            $("#text").hide();
+            $("#button").attr("disabled", true);
             $.ajax({
                 type: "GET",
                 crossDomain: true,
                 url: "https://generate-the-biscuit.deta.dev/generate",
                 dataType: "json",
                 success: function (data) {
+                    $("#loader").hide();
+                    $("#cookies").hide();
+                    $("#text").show();
+                    $("#button").removeAttr("disabled");
+                    localStorage.setItem("recipes", JSON.stringify(data));
                     var colors = ["134b53", "e2711d", "009fb7", "ed78a1", "fcda37"];
                     for (let i = 0; i < data.length; i++) {
                         $('#recipes').append(
                             `<div class="col-sm-4 col-6">
-                                            <div class="card">
-                                                <div class="card-body" id="output" style="background-color: #fff; border-radius: 5px;">
-                                                    <h3 class="card-title"><a href="demos/recipes/recipe-single.html" class="stretched-link" style="color: #${colors[i % colors.length]};">${data[i].title}</a></h3>
-                                                </div>
+                                <div class="card">
+                                    <div class="card-body" id="output" style="background-color: #fff; border-radius: 5px;">
+                                        <h3 class="card-title"><a href="recipe.html?id=${i}" class="stretched-link" style="color: #${colors[i % colors.length]};">${data[i].title}</a></h3>
+                                    </div>
                                 </div>
                             </div>`
                         );
